@@ -1,0 +1,24 @@
+{
+    "name": "orchestra-mcp/plugin-bridge-ollama",
+    "description": "Ollama local LLM bridge plugin for Orchestra MCP.",
+    "type": "bridge",
+    "license": "MIT",
+    "homepage": "https://orchestra-mcp.dev",
+    "support": {
+        "issues": "https://github.com/orchestra-mcp/plugin-bridge-ollama/issues",
+        "source": "https://github.com/orchestra-mcp/plugin-bridge-ollama"
+    },
+    "require": {
+        "orchestra-mcp/gen-go": "^0.1.0",
+        "orchestra-mcp/sdk-go": "^0.1.0"
+    },
+    "bin": "bridge-ollama",
+    "extra": {
+        "plugin-id": "bridge.ollama",
+        "provides": ["tools"],
+        "provides_ai": ["ollama"],
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
